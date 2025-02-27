@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header starts */
+
+#header {
+    /* display: flex; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(25, 19, 28);
+    /* height: 30%; */
+
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    height: 10vh;
+    width: 100%;
+}
+
+#navBar .logo {
+    padding: 5px 10px;
+    color: transparent;
+    background-image: linear-gradient(45deg, rgb(153, 35, 211), rgb(181, 14, 150), rgb(152, 59, 198));
+    background-clip: text;
+    cursor: pointer;
+    border-radius: 20px;
+    /* box-shadow: 5px 8px 35px #088178 ; */
+}
+
+#navBar .logo:hover {
+    box-shadow: 5px 3px 10px #088178
+}
+
+#navBar ul {
+    display: flex;
+
+}
+
+#navBar ul li {
+    margin: 0 25px;
+    position: relative;
+}
+
+#navBar ul li:hover::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    bottom: -4px;
+    left: 1px;
+    background-color: #088178;
+}
+
+#navBar ul li a {
+    color: rgb(153, 35, 211);
+}
+
+/* main starts */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+    width: 100%;
+    background-color: rgb(50, 48, 48);
+    /* margin: 0 20px; */
+}
+
+.main .personalInfo,
+.main img {
+    margin: 30px 40px;
+    color: white;
+}
+
+.main img {
+    width: 30%;
+    object-fit: cover;
+}
